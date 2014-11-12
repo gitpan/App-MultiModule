@@ -1,8 +1,5 @@
 package MultiModuleTest::Incrementer;
-{
-  $MultiModuleTest::Incrementer::VERSION = '1.132270';
-}
-
+$MultiModuleTest::Incrementer::VERSION = '1.143160';
 use strict;use warnings;
 use Data::Dumper;
 

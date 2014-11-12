@@ -1,8 +1,5 @@
 package App::MultiModule::Task;
-{
-  $App::MultiModule::Task::VERSION = '1.132270';
-}
-
+$App::MultiModule::Task::VERSION = '1.143160';
 use strict;use warnings;
 use IPC::Transit;
 use parent 'App::MultiModule::Core';

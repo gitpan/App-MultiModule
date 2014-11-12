@@ -1,8 +1,5 @@
 package App::MultiModule;
-{
-  $App::MultiModule::VERSION = '1.132270';
-}
-
+$App::MultiModule::VERSION = '1.143160';
 use 5.006;
 use strict;
 use warnings FATAL => 'all';

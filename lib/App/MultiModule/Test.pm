@@ -1,8 +1,5 @@
 package App::MultiModule::Test;
-{
-  $App::MultiModule::Test::VERSION = '1.132270';
-}
-
+$App::MultiModule::Test::VERSION = '1.143160';
 use strict;use warnings;
 use POSIX ":sys_wait_h";
 use IPC::Transit;

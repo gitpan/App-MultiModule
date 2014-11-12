@@ -1,10 +1,8 @@
 package MultiModuleTest::StatelessProducer;
-{
-  $MultiModuleTest::StatelessProducer::VERSION = '1.132270';
-}
-
+$MultiModuleTest::StatelessProducer::VERSION = '1.143160';
 use strict;use warnings;
 use Data::Dumper;
+use Message::Transform qw(mtransform);
 
 use parent 'App::MultiModule::Task';
 
@@ -43,6 +41,10 @@ sub set_config {
                 from => 'StatelessProducer',
                 i => $emit_ct,
             };
+            if($config->{other_stuff}) {
+                mtransform($message, $config->{other_stuff});
+            }
+#            print STDERR Data::Dumper::Dumper $message;
             $self->emit($message);
         }
     });

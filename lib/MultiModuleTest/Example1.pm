@@ -1,8 +1,5 @@
 package MultiModuleTest::Example1;
-{
-  $MultiModuleTest::Example1::VERSION = '1.132270';
-}
-
+$MultiModuleTest::Example1::VERSION = '1.143160';
 use strict;use warnings;
 
 use parent 'App::MultiModule::Task';
@@ -27,6 +24,16 @@ sub set_config {
             my $message = {
                 ct => $self->{state}->{ct}++,
                 outstr => $config->{outstr},
+                static_forwards => [
+                    [   {   transform => {
+                                some => 'transform',
+                            },
+                            forward => {
+                                qname => 'Example2',
+                            }
+                        }
+                    ]
+                ],
             };
             $self->emit($message);
         },

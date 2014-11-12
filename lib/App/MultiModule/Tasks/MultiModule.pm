@@ -1,8 +1,5 @@
 package App::MultiModule::Tasks::MultiModule;
-{
-  $App::MultiModule::Tasks::MultiModule::VERSION = '1.132270';
-}
-
+$App::MultiModule::Tasks::MultiModule::VERSION = '1.143160';
 use parent 'App::MultiModule::Task';
 use strict;use warnings;
 use Carp;

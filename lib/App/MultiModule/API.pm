@@ -1,8 +1,5 @@
 package App::MultiModule::API;
-{
-  $App::MultiModule::API::VERSION = '1.132270';
-}
-
+$App::MultiModule::API::VERSION = '1.143160';
 use strict;use warnings;
 use Data::Dumper;
 use Sereal::Encoder qw(encode_sereal);
